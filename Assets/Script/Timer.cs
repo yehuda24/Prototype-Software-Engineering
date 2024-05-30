@@ -8,7 +8,16 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private float remainingTime;
+    private SceneChanger changer;
 
+    
+    void Start()
+    {
+        GameObject obj = GameObject.Find("SceneManager"); 
+        changer = obj.GetComponent<SceneChanger>();
+    }
+    
+    
 
     
     // Update is called once per frame
@@ -32,6 +41,7 @@ public class Timer : MonoBehaviour
         else if( remainingTime <= 0)
         {
             remainingTime = 0;
+            changer.ChangeScene("Kitchen");
         }
         
         int minutes = Mathf.FloorToInt(remainingTime / 60);
