@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using System;
 
 public class Timer : MonoBehaviour
 {
@@ -13,7 +15,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private float Banyak_sampah;
     public float current_sampahLR;
     public float current_completionLR;
-    
+    public float current_completionLR1;
+
     void Start()
     {
         current_sampahLR = 0f;
@@ -26,7 +29,8 @@ public class Timer : MonoBehaviour
     {
         current_sampahLR += 1;
         current_completionLR += 100 / Banyak_sampah;
-        CompletionManager.Instance.current_completionLR = current_completionLR;
+        current_completionLR1 = (float)System.Math.Round(current_completionLR, 2);
+        CompletionManager.Instance.current_completionLR = current_completionLR1;
     }
 
     public void WrongLR()
@@ -66,7 +70,7 @@ public class Timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}",minutes ,seconds);
-        CompletionText.text = "Completion: " + current_completionLR +"%";
+        CompletionText.text = "Completion: " + current_completionLR1 +"%";
     }
 
 }
