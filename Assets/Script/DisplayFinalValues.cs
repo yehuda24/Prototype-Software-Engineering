@@ -21,7 +21,7 @@ public class DisplayFinalValues : MonoBehaviour
         completionBText.text = "Bedroom Completion: " + $"<color=green>{CompletionManager.Instance.current_completionB}%</color>";
         completionDRText.text = "Dining Room Completion: " + $"<color=green>{CompletionManager.Instance.current_completionDR}%</color>";
         completionKText.text = "Kitchen Completion: " + $"<color=green>{CompletionManager.Instance.current_completionK}%</color>";
-        completionLRText.text = "Completion LR: " + $"<color=green>{CompletionManager.Instance.current_completionLR}%</color>";
+        completionLRText.text = "Living Room Completion: " + $"<color=green>{CompletionManager.Instance.current_completionLR}%</color>";
     
     }
 }
