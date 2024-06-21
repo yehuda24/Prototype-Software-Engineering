@@ -197,8 +197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -0.0009536743}
-  m_SizeDelta: {x: 800, y: 468.86}
+  m_AnchoredPosition: {x: 0.000030518, y: 0.5316}
+  m_SizeDelta: {x: 800, y: 489.0974}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &18933594
 MonoBehaviour:
@@ -335,7 +335,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616329808}
         m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
-        m_MethodName: WrongLR
+        m_MethodName: WrongB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1037,7 +1037,7 @@ MonoBehaviour:
   timerText: {fileID: 1381605849}
   CompletionText: {fileID: 1986722621}
   remainingTime: 31
-  Banyak_sampah: 5
+  Banyak_sampah: 6
   current_sampahB: 0
   current_completionB: 0
   current_completionB1: 0
@@ -1067,7 +1067,7 @@ AudioSource:
   m_GameObject: {fileID: 649384364}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2280617750979323404, guid: 19670691abe96734eaadc93d771b9572, type: 2}
   m_audioClip: {fileID: 8300000, guid: 204cae6712e0b634ca331d069da74e30, type: 3}
   m_Resource: {fileID: 8300000, guid: 204cae6712e0b634ca331d069da74e30, type: 3}
   m_PlayOnAwake: 1
@@ -1545,7 +1545,7 @@ AudioSource:
   m_GameObject: {fileID: 817564536}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2773241811232292694, guid: 19670691abe96734eaadc93d771b9572, type: 2}
   m_audioClip: {fileID: 8300000, guid: 43aa39af015c93049b9ef5501c217d62, type: 3}
   m_Resource: {fileID: 8300000, guid: 43aa39af015c93049b9ef5501c217d62, type: 3}
   m_PlayOnAwake: 0
@@ -1660,6 +1660,7 @@ GameObject:
   - component: {fileID: 845907509}
   - component: {fileID: 845907508}
   - component: {fileID: 845907507}
+  - component: {fileID: 845907510}
   m_Layer: 5
   m_Name: Komputer
   m_TagString: Untagged
@@ -1711,9 +1712,9 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1758,7 +1759,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616329808}
         m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
-        m_MethodName: CorrectLR
+        m_MethodName: CorrectB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1817,6 +1818,94 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845907505}
+  m_CullTransparentMesh: 1
+--- !u!114 &845907510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845907505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b113af1d9d3f874983f70620147d6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 845907507}
+--- !u!1 &954743101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954743102}
+  - component: {fileID: 954743104}
+  - component: {fileID: 954743103}
+  m_Layer: 5
+  m_Name: Bed rapi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &954743102
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954743101}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1277825881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 83, y: -59}
+  m_SizeDelta: {x: 423.412, y: 192.04}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &954743103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954743101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -4883897195840357483, guid: b0eb28bc9eac2d44d925b86ccb851e52, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &954743104
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954743101}
   m_CullTransparentMesh: 1
 --- !u!1 &1126426818
 GameObject:
@@ -2225,7 +2314,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616329808}
         m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
-        m_MethodName: CorrectLR
+        m_MethodName: CorrectB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2261,10 +2350,11 @@ RectTransform:
   m_GameObject: {fileID: 1277825880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.92999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 18933593}
+  - {fileID: 954743102}
   - {fileID: 1753556413}
   - {fileID: 845907506}
   - {fileID: 319997063}
@@ -2314,7 +2404,7 @@ AudioSource:
   m_GameObject: {fileID: 1294466765}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2773241811232292694, guid: 19670691abe96734eaadc93d771b9572, type: 2}
   m_audioClip: {fileID: 8300000, guid: cca169f927f1516418429c856c67f85b, type: 3}
   m_Resource: {fileID: 8300000, guid: cca169f927f1516418429c856c67f85b, type: 3}
   m_PlayOnAwake: 0
@@ -3283,7 +3373,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616329808}
         m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
-        m_MethodName: CorrectLR
+        m_MethodName: CorrectB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3440,7 +3530,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616329808}
         m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
-        m_MethodName: CorrectLR
+        m_MethodName: CorrectB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3565,7 +3655,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 616329808}
         m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
-        m_MethodName: WrongLR
+        m_MethodName: WrongB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3714,7 +3804,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1753556415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 616329808}
+        m_TargetAssemblyTypeName: TimerB, Assembly-CSharp
+        m_MethodName: CorrectB
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 817564537}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7326490}
+        m_TargetAssemblyTypeName: ObjectDestroyer, Assembly-CSharp
+        m_MethodName: DestroyObject
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1753556412}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1753556415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3997,7 +4123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: 144}
+  m_AnchoredPosition: {x: -89, y: 194}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986722621
@@ -4032,8 +4158,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280982510
-  m_fontColor: {r: 0.9339623, g: 0.6093478, b: 0.16300285, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4050,15 +4176,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.42
-  m_fontSizeBase: 56.42
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

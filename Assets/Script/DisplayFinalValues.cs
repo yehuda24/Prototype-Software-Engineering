@@ -18,10 +18,10 @@ public class DisplayFinalValues : MonoBehaviour
         }
 
         // Update the UI text with the completion values
-        completionBText.text = "Bedroom Completion: " + $"<color=green>{CompletionManager.Instance.current_completionB}%</color>";
-        completionDRText.text = "Dining Room Completion: " + $"<color=green>{CompletionManager.Instance.current_completionDR}%</color>";
-        completionKText.text = "Kitchen Completion: " + $"<color=green>{CompletionManager.Instance.current_completionK}%</color>";
-        completionLRText.text = "Living Room Completion: " + $"<color=green>{CompletionManager.Instance.current_completionLR}%</color>";
+        completionBText.text = "Bedroom Completion: " + $"<color=#006400>{CompletionManager.Instance.current_completionB}%</color>";
+        completionDRText.text = "Dining Room Completion: " + $"<color=#006400>{CompletionManager.Instance.current_completionDR}%</color>";
+        completionKText.text = "Kitchen Completion: " + $"<color=#006400>{CompletionManager.Instance.current_completionK}%</color>";
+        completionLRText.text = "Living Room Completion: " + $"<color=#006400>{CompletionManager.Instance.current_completionLR}%</color>";
     
     }
 }

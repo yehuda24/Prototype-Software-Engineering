@@ -197,8 +197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: -0.00095367}
-  m_SizeDelta: {x: 800, y: 468.86}
+  m_AnchoredPosition: {x: 0.000030518, y: -0.001}
+  m_SizeDelta: {x: 800, y: 485.9022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &18933594
 MonoBehaviour:
@@ -339,7 +339,7 @@ AudioSource:
   m_GameObject: {fileID: 119736572}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2280617750979323404, guid: 19670691abe96734eaadc93d771b9572, type: 2}
   m_audioClip: {fileID: 8300000, guid: 204cae6712e0b634ca331d069da74e30, type: 3}
   m_Resource: {fileID: 8300000, guid: 204cae6712e0b634ca331d069da74e30, type: 3}
   m_PlayOnAwake: 1
@@ -1093,7 +1093,7 @@ AudioSource:
   m_GameObject: {fileID: 675992881}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2773241811232292694, guid: 19670691abe96734eaadc93d771b9572, type: 2}
   m_audioClip: {fileID: 8300000, guid: 43aa39af015c93049b9ef5501c217d62, type: 3}
   m_Resource: {fileID: 8300000, guid: 43aa39af015c93049b9ef5501c217d62, type: 3}
   m_PlayOnAwake: 0
@@ -2069,7 +2069,7 @@ AudioSource:
   m_GameObject: {fileID: 1235359396}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2773241811232292694, guid: 19670691abe96734eaadc93d771b9572, type: 2}
   m_audioClip: {fileID: 8300000, guid: cca169f927f1516418429c856c67f85b, type: 3}
   m_Resource: {fileID: 8300000, guid: cca169f927f1516418429c856c67f85b, type: 3}
   m_PlayOnAwake: 0
@@ -2198,7 +2198,7 @@ RectTransform:
   m_GameObject: {fileID: 1277825880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.92999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 18933593}
@@ -3300,6 +3300,7 @@ GameObject:
   - component: {fileID: 1862141565}
   - component: {fileID: 1862141564}
   - component: {fileID: 1862141563}
+  - component: {fileID: 1862141566}
   m_Layer: 5
   m_Name: Lampu
   m_TagString: Untagged
@@ -3350,9 +3351,9 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3445,6 +3446,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862141561}
   m_CullTransparentMesh: 1
+--- !u!114 &1862141566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862141561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b113af1d9d3f874983f70620147d6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1862141563}
 --- !u!1 &1891581424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,7 +3625,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272, y: 144}
+  m_AnchoredPosition: {x: -89, y: 194}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986722621
@@ -3646,8 +3660,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281305589
-  m_fontColor: {r: 0.9622642, g: 0.5353729, b: 0.18609825, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3664,15 +3678,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.42
-  m_fontSizeBase: 56.42
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4552,7 +4566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -392.94, y: -219.86}
+  m_AnchoredPosition: {x: -358, y: -200}
   m_SizeDelta: {x: 65.7767, y: 29.1514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7918207613928336224

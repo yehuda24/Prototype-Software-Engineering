@@ -49,12 +49,12 @@ public class Timer : MonoBehaviour
         if(remainingTime > 11 && current_sampahLR < Banyak_sampah)
         {
             remainingTime -= Time.deltaTime;
-            timerText.color = Color.green;
+            timerText.color = Color.white;
         }
         else if( remainingTime <= 11 && remainingTime > 6 && current_sampahLR < Banyak_sampah)
         {
            remainingTime -= Time.deltaTime;
-           timerText.color = new Color(1f, 0.5f, 0f, 1f);
+           timerText.color = Color.white;
         }
         else if( remainingTime <= 6 && remainingTime > 0 && current_sampahLR < Banyak_sampah)
         {
@@ -70,7 +70,7 @@ public class Timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}",minutes ,seconds);
-        CompletionText.text = "Completion: " + current_completionLR1 +"%";
+        CompletionText.text = "Completion:\n " + current_completionLR1 +"%";
     }
 
 }

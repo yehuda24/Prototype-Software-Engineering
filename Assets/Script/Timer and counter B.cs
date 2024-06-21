@@ -23,7 +23,7 @@ public class TimerB : MonoBehaviour
         changer = obj.GetComponent<SceneChanger>();
     }
     
-    public void CorrectLR()
+    public void CorrectB()
     {
         current_sampahB += 1;
         current_completionB += 100 / Banyak_sampah;
@@ -31,7 +31,7 @@ public class TimerB : MonoBehaviour
         CompletionManager.Instance.current_completionB = current_completionB1;
     }
 
-    public void WrongLR()
+    public void WrongB()
     {
         current_sampahB += 1;
     }
@@ -47,12 +47,12 @@ public class TimerB : MonoBehaviour
         if(remainingTime > 11 && current_sampahB < Banyak_sampah)
         {
             remainingTime -= Time.deltaTime;
-            timerText.color = Color.green;
+            timerText.color = Color.white;
         }
         else if( remainingTime <= 11 && remainingTime > 6 && current_sampahB < Banyak_sampah)
         {
            remainingTime -= Time.deltaTime;
-           timerText.color = new Color(1f, 0.5f, 0f, 1f);
+           timerText.color = Color.white;
         }
         else if( remainingTime <= 6 && remainingTime > 0 && current_sampahB < Banyak_sampah)
         {
@@ -68,7 +68,7 @@ public class TimerB : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}",minutes ,seconds);
-        CompletionText.text = "Completion: " + current_completionB1 +"%";
+        CompletionText.text = "Completion:\n " + current_completionB1 +"%";
     }
 
 }
