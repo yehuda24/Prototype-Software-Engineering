@@ -13,7 +13,8 @@ public class TimerDR : MonoBehaviour
     [SerializeField] private float Banyak_sampah;
     public float current_sampahDR;
     public float current_completionDR;
-    
+    public float current_completionDR1;
+
     void Start()
     {
         current_sampahDR = 0f;
@@ -26,7 +27,8 @@ public class TimerDR : MonoBehaviour
     {
         current_sampahDR += 1;
         current_completionDR += 100 / Banyak_sampah;
-        CompletionManager.Instance.current_completionDR = current_completionDR;
+        current_completionDR1 = (float)System.Math.Round(current_completionDR, 2);
+        CompletionManager.Instance.current_completionDR = current_completionDR1;
     }
 
     public void WrongDR()
@@ -66,7 +68,7 @@ public class TimerDR : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}",minutes ,seconds);
-        CompletionText.text = "Completion: " + current_completionDR +"%";
+        CompletionText.text = "Completion: " + current_completionDR1 +"%";
     }
 
 }

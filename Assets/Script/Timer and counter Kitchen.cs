@@ -13,6 +13,7 @@ public class TimerK : MonoBehaviour
     [SerializeField] private float Banyak_sampah;
     public float current_sampahK;
     public float current_completionK;
+    public float current_completionK1;
     
     void Start()
     {
@@ -26,7 +27,8 @@ public class TimerK : MonoBehaviour
     {
         current_sampahK += 1;
         current_completionK += 100 / Banyak_sampah;
-        CompletionManager.Instance.current_completionK = current_completionK;
+        current_completionK1 = (float)System.Math.Round(current_completionK,2);
+        CompletionManager.Instance.current_completionK = current_completionK1;
     }
 
     public void WrongK()
@@ -66,7 +68,7 @@ public class TimerK : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}",minutes ,seconds);
-        CompletionText.text = "Completion: " + current_completionK +"%";
+        CompletionText.text = "Completion: " + current_completionK1 +"%";
     }
 
 }
